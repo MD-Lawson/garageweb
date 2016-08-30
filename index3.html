@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Crown Garage Leek</title>
+        <meta name="description" content="Crown Garage Leek">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div class="header">
+            <!--<h1 stlye="margin: auto">Crown Garage Leek LTD</h1> -->
+            <img src="title.png"/>
+        </div>
+        <div class="navbar">
+            <br>
+            <ul class="navbar">
+                <li class="navbar"><a class="navbar" href="index3.html">Home</a></li>
+                <li class="navbar"><a class="navbar" href="about.html">About</a></li>
+                <li class="navbar"><a class="navbar" href="services.html">Services</a></li>
+                <li class="navbar"><a class="navbar" href="mot.html">M.O.T</a></li>
+                <li class="navbar"><a class="navbar" href="contact.html">Contact Us</a></li>
+                <li class="navbar"><a class="navbar" href="find.html">Find Us</a></li>
+                </ul>
+        </div>
+        <br>
+        <div class="slideshow">
+
+            <img class="mySlides" src="newbuilding.JPG">
+            <img class="mySlides" src="motbay.JPG">
+            <img class="mySlides" src="sign.JPG">
+            <img class="mySlides" src="dadwork.JPG">
+
+        </div>
+
+
+        <h2>From M.O.Ts, class 4 + 7 repairs and servicing to Air Con and diagnostics, you can rely on us for your vehicle needs.</h2>
+        
+        <h3>Crown Garage is a family run business which offers a quality service with competitive prices. Having over 75 years of experience, we have built a well earned reputation in Leek, Cheddleton and surrounding areas, offering a fast, efficient, friendly and reliable service.</h3>
+        
+    </body>
+    
+    <footer>
+        <div style="display:inline-block">
+            <img src="vosa.jpg" class="foot"/>
+            <img src="imi.jpg" class="foot"/>
+            <img src="micode.jpg" class="foot"/>
+            <img src="servicesure.jpg" class="foot"/>
+        </div>
+    </footer>
+    
+<script>
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none"; 
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {slideIndex = 1} 
+        x[slideIndex-1].style.display = "block"; 
+        setTimeout(carousel, 3000); // Change image every 2 seconds
+    }
+</script>
+</html>
